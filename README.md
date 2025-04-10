@@ -131,14 +131,22 @@ Once the app is running:
 ---
 
 Results
-### 💻 Home Page
-![Home Page](Output_screenshots /Screenshot 2025-04-10 at 3.45.37 PM.png)
+---
 
-### 📊 Budget Report
-![Report Page](screenshots/report.png)
+## 📸 Results
 
-### 👥 Group Expense
-![Group Expense](screenshots/group_expense.png)
+
+![Home Page](Output_screenshots/Screenshot%202025-04-10%20at%203.45.37%E2%80%AFPM.png)
+
+
+![Budget Report](Output_screenshots/Screenshot%202025-04-10%20at%203.46.07%E2%80%AFPM.png)
+
+
+![Add Group Expense](Output_screenshots/Screenshot%202025-04-10%20at%203.48.24%E2%80%AFPM.png)
+
+
+![Group Report](Output_screenshots/Screenshot%202025-04-10%20at%204.02.08%E2%80%AFPM.png)
+
 
 ## Developer
 
