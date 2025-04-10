@@ -131,8 +131,14 @@ Once the app is running:
 ---
 
 Results
-
+### 💻 Home Page
 ![Home Page](Output_screenshots /Screenshot 2025-04-10 at 3.45.37 PM.png)
+
+### 📊 Budget Report
+![Report Page](screenshots/report.png)
+
+### 👥 Group Expense
+![Group Expense](screenshots/group_expense.png)
 
 ## Developer
 
