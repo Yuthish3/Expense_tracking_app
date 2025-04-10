@@ -138,7 +138,7 @@ Results
 ## 📸 Results
 
 ### 💻 Home Page
-![Home Page](Output_screenshots/Screenshot%202025-04-10%20at%203.45.37%E2%80%AFPM.png)
+![Home Page](Output_screenshots /group_report.png)
 
 ### 📊 Budget Report
 ![Budget Report](Output_screenshots/Screenshot%202025-04-10%20at%203.46.07%E2%80%AFPM.png)
