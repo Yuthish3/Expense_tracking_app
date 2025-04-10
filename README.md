@@ -132,7 +132,8 @@ Once the app is running:
 
 Results
 
-(Output_screenshots /Screenshot 2025-04-10 at 3.45.37 PM.png)
+![Home Page](Output_screenshots /Screenshot 2025-04-10 at 3.45.37 PM.png)
+
 ## Developer
 
 Developed by **Yuthish Kumar V**
