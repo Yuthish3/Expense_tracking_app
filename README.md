@@ -16,7 +16,7 @@ This is a Flask-based Expense Tracker web application that helps users manage th
 - Monthly reports showing:
   - Total spending
   - Spending vs. budget per category
-- Email notifications when budget limits are approached or exceeded
+- Email notifications when budget limits are approached or exceeded *(optional)*
 
 ### Group Expense Sharing
 - Create and manage groups
@@ -29,11 +29,11 @@ This is a Flask-based Expense Tracker web application that helps users manage th
 
 ## Technologies Used
 
-- Backend: Flask, Flask-SQLAlchemy, Flask-Mail
-- Frontend: HTML, Bootstrap (minimal styling)
-- Database: SQLite
-- Emailing: Flask-Mail with custom alerts
-- Deployment: Docker-ready
+- **Backend:** Flask, Flask-SQLAlchemy, Flask-Mail
+- **Frontend:** HTML, Bootstrap (minimal styling)
+- **Database:** SQLite
+- **Emailing:** Flask-Mail with custom alerts (optional)
+- **Deployment:** Docker-ready
 
 ---
 
@@ -41,8 +41,8 @@ This is a Flask-based Expense Tracker web application that helps users manage th
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/expense-tracker.git
-cd expense-tracker
+git clone https://github.com/Yuthish3/Expense_tracking_app.git
+cd Expense_tracking_app
 ```
 
 ### Run Locally (Without Docker)
@@ -59,14 +59,17 @@ venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 ```
 
-#### 3. Set environment variables:
-Create a `.env` file and add the following:
+#### 3. [Optional] Set Email Credentials for Budget Alerts
+
+> 💡 *You can skip this step if you do not want email alerts. The application will still work fully — only the alerts will be skipped.*
+
+If you want email alerts, open `app.py` and enter:
+```python
+MAIL_USERNAME = 'your_email@gmail.com'
+MAIL_PASSWORD = 'your_google_app_password'
 ```
-FLASK_APP=app.py
-FLASK_ENV=development
-MAIL_USERNAME=your_email@gmail.com
-MAIL_PASSWORD=your_google_app_password
-```
+
+Alternatively, you can set these as environment variables before running.
 
 #### 4. Run the application:
 ```bash
@@ -95,16 +98,16 @@ Visit [http://localhost:5050](http://localhost:5050)
 
 ## Setting Up Google App Password (for Gmail Alerts)
 
-If you're using a Gmail account to send email notifications, a regular password will not work. Follow the steps below to generate an **App Password**:
+To enable email alerts using Gmail:
 
 1. Go to your Google Account: [https://myaccount.google.com](https://myaccount.google.com)
-2. Navigate to **Security**.
-3. Enable **2-Step Verification** if not already enabled.
-4. Once enabled, go to the **App Passwords** section.
-5. Select the app as "Mail" and the device as "Other" (name it anything, like "Expense Tracker").
-6. Click **Generate**.
-7. Copy the 16-character app password provided.
-8. Use this password in your `.env` file as `MAIL_PASSWORD`.
+2. Navigate to **Security**
+3. Enable **2-Step Verification**
+4. After enabling, go to **App Passwords**
+5. Select App = Mail, Device = Other (name it "Expense Tracker")
+6. Click **Generate**
+7. Copy the 16-character app password
+8. Paste it into `app.py` under `MAIL_PASSWORD`
 
 ---
 
@@ -122,11 +125,17 @@ Once the app is running:
    - Add shared expenses
    - View balance and expense history
 
-3. Trigger email alerts by setting a budget and exceeding or nearing it
+3. Trigger email alerts by setting a budget and exceeding or nearing it (if credentials are configured)
 
 ---
 
 ## Developer
 
-Developed by **Yuthish Kumar V**  
-Features including budget alerts, email notifications, and group-based expense sharing were implemented as part of this application.
+Developed by **Yuthish Kumar V**
+
+Features include:
+- Budget tracking and reporting
+- Email notifications
+- Group-based expense sharing (like Splitwise)
+
+
