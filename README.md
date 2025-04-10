@@ -128,26 +128,8 @@ Once the app is running:
 
 3. Trigger email alerts by setting a budget and exceeding or nearing it (if credentials are configured)
 
----
 
-Results
----
 
----
-
-## 📸 Results
-
-### 💻 Home Page
-![Home Page](Output_screenshots/group_report.png)
-
-### 📊 Budget Report
-![Budget Report](Output_screenshots/Screenshot%202025-04-10%20at%203.46.07%E2%80%AFPM.png)
-
-### ➕ Add Group Expense
-![Add Group Expense](Output_screenshots/Screenshot%202025-04-10%20at%203.48.24%E2%80%AFPM.png)
-
-### 👥 Group Expense Report
-![Group Report](Output_screenshots/Screenshot%202025-04-10%20at%204.02.08%E2%80%AFPM.png)
 
 
 
