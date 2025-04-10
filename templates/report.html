@@ -1,0 +1,47 @@
+<!-- templates/report.html -->
+{% extends "base.html" %}
+{% block content %}
+<h2 class="mb-3">Monthly Report for <span class="text-primary">{{ email }}</span></h2>
+<p>Month: <strong>{{ month }}</strong></p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Spent</th>
+            <th>Budget Set</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for category, spent in summary.items() %}
+        <tr>
+            <td>{{ category }}</td>
+            <td>₹{{ "%.2f"|format(spent) }}</td>
+            <td>
+                {% if budgets[category] %}
+                    ₹{{ "%.2f"|format(budgets[category]) }}
+                {% else %}
+                    <span class="text-muted">Not Set</span>
+                {% endif %}
+            </td>
+            <td>
+                {% if budgets[category] %}
+                    {% if spent > budgets[category] %}
+                        <span class="text-danger fw-bold">Exceeded by ₹{{ "%.2f"|format(spent - budgets[category]) }}</span>
+                    {% elif spent > 0.9 * budgets[category] %}
+                        <span class="text-warning fw-bold">Over 90% used</span>
+                    {% else %}
+                        <span class="text-success">Within Budget</span>
+                    {% endif %}
+                {% else %}
+                    <span class="text-muted">N/A</span>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<p class="fw-bold">Total: ₹{{ "%.2f"|format(total) }}</p>
+{% endblock %}

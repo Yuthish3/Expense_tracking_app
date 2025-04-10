@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Add Budget</h2>
+<form method="POST">
+    <label>Email:</label>
+    <input type="email" name="email" required><br>
+    <label>Category:</label>
+    <input type="text" name="category" required><br>
+    <label>Month (YYYY-MM):</label>
+    <input type="text" name="month" required><br>
+    <label>Limit:</label>
+    <input type="number" name="limit" required><br>
+    <input type="submit" value="Add Budget">
+</form>
+{% endblock %}
