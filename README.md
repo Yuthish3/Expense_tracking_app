@@ -1,8 +1,4 @@
-Sure! Here's the complete content of your `README.md` in markdown format, cleaned up (no emojis, no folder structure or evaluation criteria) and with a **Google App Password setup guide** added at the end.
 
----
-
-```markdown
 # Expense & Budget Tracker with Group Sharing
 
 This is a Flask-based Expense Tracker web application that helps users manage their **daily expenses**, set **monthly budgets** for each category, receive **alerts when budgets are exceeded**, and even share **group expenses** similar to Splitwise.
